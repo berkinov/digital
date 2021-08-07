@@ -1,0 +1,133 @@
+
+.jobs {
+	padding: 150px 20px 60px;
+	@media (max-width: 800px) {
+		padding: 100px 20px 0;
+	}
+
+
+	&__item {
+		text-align: center;
+		@media (max-width: 843px) {
+			padding: 0 0 30px;
+		}
+	}
+
+	&__item-desc {
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 26px;
+		color: #303948;
+	}
+
+	&__item-title {
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 51px;
+		color: #14213D;
+		@media (max-width: 602px) {
+			font-size: 30px;
+			line-height: 30px;
+			margin: 10px 0;
+		}
+	}
+
+	&__slider {
+		margin-top: -100px;
+	}
+}
+.swiper-container {
+  width: 100%;
+  height: 700px;
+	margin-top: 90px;
+	position: relative;
+}
+
+.swiper-slide {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.job-slider {
+
+	&__img {
+		width: 60%;
+		height: 300px;
+		object-fit: cover;
+		border-radius: 35px;
+		@media (max-width: 843px) {
+			width: 90%;
+		}
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 51px;
+		color: #14213D;
+		margin-top: 36px;
+		display: inline-block;
+		@media (max-width: 736px) {
+			font-size: 26px;
+		}
+	}
+
+	&__desc {
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 26px;
+		color: #59616D;
+		margin: 14px 0 36px;
+		display: inline-block;
+		@media (max-width: 602px) {
+			margin: 10px 0 20px;
+		}
+	}
+
+	&__btn {
+		font-weight: 500;
+		font-size: 18px;
+		color: #FAFAFA;
+		background: #14213D;
+		border-radius: 35px;
+		padding: 18px 70px;
+		transition: all .3s ease;
+		&:hover {
+			background: #ccc;
+			color: #14213D;
+		}
+	}
+}
+
+.swiper-button-prev, 
+.swiper-container-rtl 
+.swiper-button-next {
+	left: auto !important;
+	right: 85px !important;
+	top: 25px !important;
+	background: rgba(20, 33, 61, 0.5);
+	border-radius: 35px;
+	padding: 20px 25px;
+	&:active {
+		background: #14213D;
+	}
+}
+.swiper-button-next, 
+.swiper-container-rtl 
+.swiper-button-prev {
+	right: 10px;
+	left: auto;
+	top: 25px !important;
+	background: rgba(20, 33, 61, 0.5);
+	border-radius: 35px;
+	padding: 20px 25px;
+	&:active {
+		background: #14213D;
+	}
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+	font-size: 18px !important;
+	color: #fff;
+}
